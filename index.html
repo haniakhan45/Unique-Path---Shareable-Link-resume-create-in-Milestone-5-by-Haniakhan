@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Unique Path and Shareable Link Resume Builder</h1>
+    <form id="resumeForm">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="Username"> Resume Path URL:</label>
+        <input type="text" name="Username" id="Username" required /> <br />
+
+        <label for="name"> Name:</label>
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input type="phone" id="phone" name="phone" required />
+      </fieldset>
+      <!--Profile picture-->
+      <label for="profilePicture">profilePicture</label>
+      <input
+        type="file"
+        id="profilePicture"
+        name="profilePicture"
+        accept="image/*"
+        required
+      />
+
+      <!-- Education-->
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education</label>
+        <textarea id="education" name="education" rows="6" required></textarea
+        ><br />
+      </fieldset>
+
+      <!--Experience-->
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience</label>
+        <textarea id="experience" name="experience" rows="6" required></textarea
+        ><br />
+      </fieldset>
+
+      <!--Skills-->
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills</label>
+        <textarea id="skills" name="skills" rows="6" required></textarea><br />
+      </fieldset>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+      <!--Resume will be generated below-->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
